@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.studyjams.gbalan.fiveprotocolbtherapy.Protocol">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#c2dacd"
+        android:contentDescription="start"
+        android:src="@drawable/simbol" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#339738"
+        android:gravity="center"
+        android:text="Protocoale"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scrollIndicators="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100pt"
+                        android:layout_height="wrap_content"
+                        android:background="#C8E6C9"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:text="1. Coloana"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonColoana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:onClick="submitColoana"
+                        android:text="v" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ColoanaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E8F5E9"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="8dp"
+                    android:text="scolioza, cifoza, alte probleme"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100pt"
+                        android:layout_height="match_parent"
+                        android:background="#C8E6C9"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:text="2. ADHD"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonADHD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:onClick="submitADHD"
+                        android:text="v" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ADHDTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E8F5E9"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="8dp"
+                    android:text="probleme de atentie, comportament"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100pt"
+                        android:layout_height="wrap_content"
+                        android:background="#C8E6C9"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:text="3. Tiroida"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonTiroida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:onClick="submitTiroida"
+                        android:text="v" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TiroidaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E8F5E9"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="8dp"
+                    android:text="hiper, hipo, orice problema"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100pt"
+                        android:layout_height="match_parent"
+                        android:background="#C8E6C9"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:text="4. Antistress"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonAntistress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:onClick="submitAntistress"
+                        android:text="v" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/AntistressTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E8F5E9"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100pt"
+                        android:layout_height="wrap_content"
+                        android:background="#C8E6C9"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:text="5. Oboseala"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonOboseala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:onClick="submitOboseala"
+                        android:text="v" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ObosealaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E8F5E9"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="8dp"
+                    android:text="Dureri musculare si oboseala cronica"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
